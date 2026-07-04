@@ -1,131 +1,114 @@
-# Tichi
-# Tichi Authentication Automation Using Playwright
+# Tichi Authentication Testing
 
-## About the Project
+## Overview
 
-This project is a beginner-level automation testing project developed using Playwright and JavaScript.
+This project focuses on manually testing the authentication module of the Tichi web application. The objective was to verify the functionality of Login, Signup, OTP Verification, and Forgot Password by creating test cases and identifying defects in the application.
 
-The main aim of this project is to automate some of the basic authentication functionalities of the Tichi web application such as Login and Signup.
-
-This project helped me understand how automation testing works and how Playwright can be used to automate web applications.
+The project includes a comprehensive set of test cases and a detailed bug report based on the testing performed.
 
 ---
 
-## Objective
+## Project Objectives
 
-The objective of this project is to learn Playwright by automating basic authentication scenarios and understanding the workflow of web application testing.
+- Understand the authentication workflow of the application.
+- Create test cases for different authentication scenarios.
+- Identify functional and usability defects.
+- Document bugs with severity and priority.
+
+---
+
+## Modules Tested
+
+- Login
+- Signup
+- OTP Verification
+- Forgot Password
+- Session Management
+- Input Validation
+
+---
+
+## Deliverables
+
+- Test Case Document (80 Test Cases)
+- Bug Report
+- Defect Summary
+
+---
+
+## Test Scenarios Covered
+
+### Login
+
+- Valid Login
+- Invalid Email
+- Empty Email
+- Unverified Email
+- Existing User Login
+
+### Signup
+
+- New User Registration
+- Existing User
+- Required Field Validation
+- Invalid Email Format
+- Password Validation
+
+### OTP Verification
+
+- Valid OTP
+- Invalid OTP
+- Expired OTP
+- Resend OTP
+- OTP Page Refresh
+- OTP Countdown
+
+### Forgot Password
+
+- Password Reset
+- Invalid Email
+- Reset Link Validation
+
+### Security & Session
+
+- Multiple Browser Tabs
+- Session Handling
+- Unauthorized Access
+- Browser Refresh
+
+---
+
+## Bugs Identified
+
+Some of the issues identified during testing include:
+
+- User gets stuck after leaving the OTP verification page.
+- "Email Not Verified" workflow has no recovery option.
+- OTP countdown timer does not update correctly.
+- Refreshing the OTP page returns the user to the signup page.
+- Internal Server Error observed during concurrent login testing.
 
 ---
 
 ## Tools Used
 
-- Playwright
-- JavaScript
-- Node.js
-- Visual Studio Code
+- Microsoft Excel (Test Case Documentation)
+- Microsoft Excel (Bug Report Documentation)
+- Google Chrome
+- Tichi Web Application (Stage Environment)
 
 ---
 
-## Project Structure
+## Learning Outcome
 
-```
-Automation-Testing-Using-Playwright-main
+Through this project, I learned:
 
-│
-├── PlaywrightLoginAutomation
-│ ├── LoginPage.js
-│ └── SignUpPage.js
-│
-├── test
-│ ├── login.spec.js
-│ ├── signup.spec.js
-│ └── test.spec.js
-│
-├── playwright.config.js
-├── package.json
-└── README.md
-```
-
----
-
-## Test Scenarios
-
-This project includes automation for the following scenarios:
-
-### Login
-
-- Login using registered email
-- Invalid email validation
-- Empty email validation
-
-### Signup
-
-- New user registration
-- Existing user validation
-- Required field validation
-
----
-
-## What I Learned
-
-While doing this project, I learned:
-
-- Basics of Playwright
-- Page Object Model (POM)
-- Writing simple automation scripts
-- Finding web elements using locators
-- Executing Playwright test cases
-- Understanding authentication workflow
-
----
-
-## How to Run the Project
-
-Install the required packages
-
-```bash
-npm install
-```
-
-Install Playwright browsers
-
-```bash
-npx playwright install
-```
-
-Run all tests
-
-```bash
-npx playwright test
-```
-
-Run Login tests
-
-```bash
-npx playwright test login.spec.js
-```
-
-Run Signup tests
-
-```bash
-npx playwright test signup.spec.js
-```
-
----
-
-## Report
-
-After execution, Playwright generates an HTML report which can be viewed using:
-
-```bash
-npx playwright show-report
-```
-
----
-
-## Conclusion
-
-This project helped me understand the basics of web automation testing using Playwright. It also gave me practical experience in automating authentication features like Login and Signup while learning the Page Object Model approach.
+- Software Testing Fundamentals
+- Writing Test Cases
+- Bug Reporting
+- Defect Classification
+- Severity and Priority Analysis
+- Authentication Workflow Testing
 
 ---
 
@@ -133,6 +116,6 @@ This project helped me understand the basics of web automation testing using Pla
 
 **Harish S**
 
-BE - Electronics and Communication Engineering
+BE – Electronics and Communication Engineering
 
 Sri Shakthi Institute of Engineering and Technology
